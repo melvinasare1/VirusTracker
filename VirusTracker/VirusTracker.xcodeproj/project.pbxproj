@@ -18,6 +18,11 @@
 		1188DB982459099B0030BB59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1188DB962459099B0030BB59 /* Main.storyboard */; };
 		1188DB9A2459099C0030BB59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1188DB992459099C0030BB59 /* Assets.xcassets */; };
 		1188DB9D2459099C0030BB59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1188DB9B2459099C0030BB59 /* LaunchScreen.storyboard */; };
+		126739BC2488385800636296 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126739BB2488385800636296 /* QuestionsViewController.swift */; };
+		126739BE2488386800636296 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126739BD2488386800636296 /* ResultsTableViewController.swift */; };
+		126739C32488388C00636296 /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126739C02488388B00636296 /* QuestionData.swift */; };
+		126739C42488388C00636296 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126739C12488388C00636296 /* Question.swift */; };
+		126739C52488388C00636296 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126739C22488388C00636296 /* Answer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,11 @@
 		1188DB992459099C0030BB59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1188DB9C2459099C0030BB59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1188DB9E2459099C0030BB59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		126739BB2488385800636296 /* QuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		126739BD2488386800636296 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
+		126739C02488388B00636296 /* QuestionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
+		126739C12488388C00636296 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		126739C22488388C00636296 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				1188DB942459099B0030BB59 /* VirusViewController.swift */,
+				126739BB2488385800636296 /* QuestionsViewController.swift */,
+				126739BD2488386800636296 /* ResultsTableViewController.swift */,
 				1111C3C82459291E0088CC0F /* VirusDetailViewController.swift */,
 			);
 			path = Controllers;
@@ -87,6 +99,9 @@
 		1188DBA624590AC30030BB59 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				126739C12488388C00636296 /* Question.swift */,
+				126739C22488388C00636296 /* Answer.swift */,
+				126739C02488388B00636296 /* QuestionData.swift */,
 				1111C3BE24590DE90088CC0F /* FlagCell.swift */,
 				1111C3C024591C9D0088CC0F /* SummaryResponse.swift */,
 				1111C3C224591D830088CC0F /* VirusClient.swift */,
@@ -181,10 +196,15 @@
 				1111C3C124591C9D0088CC0F /* SummaryResponse.swift in Sources */,
 				1188DB912459099B0030BB59 /* AppDelegate.swift in Sources */,
 				1111C3C5245923540088CC0F /* Utils.swift in Sources */,
+				126739BE2488386800636296 /* ResultsTableViewController.swift in Sources */,
 				1188DB932459099B0030BB59 /* SceneDelegate.swift in Sources */,
+				126739BC2488385800636296 /* QuestionsViewController.swift in Sources */,
+				126739C52488388C00636296 /* Answer.swift in Sources */,
 				1111C3C92459291E0088CC0F /* VirusDetailViewController.swift in Sources */,
 				1111C3C324591D830088CC0F /* VirusClient.swift in Sources */,
+				126739C42488388C00636296 /* Question.swift in Sources */,
 				1111C3BF24590DE90088CC0F /* FlagCell.swift in Sources */,
+				126739C32488388C00636296 /* QuestionData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +351,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7G4UHWJ29G;
 				INFOPLIST_FILE = VirusTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -349,6 +370,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7G4UHWJ29G;
 				INFOPLIST_FILE = VirusTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
